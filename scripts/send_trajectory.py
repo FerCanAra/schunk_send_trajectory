@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import rospy
 import actionlib
@@ -7,7 +7,7 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 
 actionName = '/arm/joint_trajectory_controller/follow_joint_trajectory/goal'
 
-def send_joint_angles(joint_angles, client, durationSeconds)
+def send_joint_angles(joint_angles, client, durationSeconds):
     # Create joint trajectory message
     joint_traj = JointTrajectory()
     joint_traj.joint_names = ['arm_1_joint', 'arm_2_joint', 'arm_3_joint', 'arm_4_joint', 'arm_5_joint', 'arm_6_joint']
